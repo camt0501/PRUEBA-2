@@ -1,0 +1,39 @@
+.slider{
+	background: url("../imag/fonde.jpg");
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+}
+
+#block{
+	margin-top: 60px;
+	height: 70%;
+}
+.bg-gray{
+	background-color: #656565;
+	opacity: 0.8;
+ }
+ .bg-green{
+ 	background-color: #8E8E8E;
+ 	opacity: 2;
+ }
+form{
+	
+}
+.hola{
+	width: 1024px;
+    height: 100px;
+    margin:left;
+
+    
+}
+
+
+
+
+#caja1{
+float:left;
+}
+#caja2{
+float:right;
+}
