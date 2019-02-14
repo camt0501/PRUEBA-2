@@ -1,0 +1,491 @@
+<html lang="en">
+  <head>
+    <title>Proyecto Espetours</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="css/estiloss.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+
+  	<div class="container text-black border border-dark bg-green w-80">
+  		<h2 class="text-center">Protocolo de alistamiento</h2> <br>
+  		<form class="container" id="needs-validation" novalidate>
+  			<!-- FECHA -->
+  			<div class="row">
+           	 	<div class="form-group mx-sm-4"> 
+            		<label for="validationCustom01">Fecha</label> 
+              		<input type="date" class="form-control" id="validationCustom01" placeholder="Fecha"  name="fecha_nacimiento"  required > 
+            	</div>
+              <div class="invalid-feedback">
+                Por favor No dejar en blanco.
+              </div>
+              <div class="valid-feedback">
+                Se ve Bien!!
+              </div>
+            </div>
+            <!-- PLACA -->
+           	<div class="row">
+           		<div class="form-group mx-sm-4">
+              		<label for="exampleFormControlSelect1">Placa</label>
+            		<select class="form-control" id="exampleFormControlSelect1">
+              			<option>Seleccione...</option>
+           			</select>
+            	</div>
+          	</div>
+          	<!-- Origen - destino -->
+          	<div class="row">
+            	<div class="col-md-4 mb-4 mx-sm-2">
+              		<label for="validationCustom03">Origen - Destino</label>
+              		<input type="text" class="form-control" id="validationCustom03" placeholder="" required>
+	              	<div class="invalid-feedback">
+	               		Por favor digite un destino valido.
+	              	</div>
+                  <div class="valid-feedback">
+                    Se ve Bien!!
+                  </div>
+            	</div>
+           </div>
+           <!-- Hora De Salida -->
+           <div class="row">
+            	<div class="col-md-4 mb-3 mx-sm-2">
+              		<label for="validationCustom04">Hora de salida</label>
+             		<input type="text" class="form-control" id="validationCustom04" placeholder="" required>
+	             	<div class="invalid-feedback">
+	               		Por favor digite una hora valida.
+	              	</div>
+            	</div>
+            </div>	
+            <!-- Conductor -->
+           	<div class="row">
+           		<div class="form-group mx-sm-2 col-md-5">
+              		<label for="exampleFormControlSelect1">Conductor</label>
+            		<select class="form-control" id="exampleFormControlSelect1">
+              			<option>Seleccione...</option>
+           			</select>
+            	</div>
+          	</div>
+
+          	<!-- - - - - - - - - - Concepto Y Estado - - - - - - - - - -->
+
+          	<div class="row">
+   			 	<div class="col">
+     				<h3 class="text-center">Concepto</h3>
+    			</div>
+   				<div class="col">
+					<h3 class="text-center">Estado</h3>
+   			 	</div>
+   			 </div>	
+   			  	<!-- KilometrAJE -->
+   			 	<div class="form-group row">
+    				<label for="colFormLabel" class="col-6 col-form-label text-center">Kilometraje Actual</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
+              <div class="invalid-feedback">
+                Por favor digite un kilometraje valido.
+              </div>
+              <div class="valid-feedback">
+                    Se ve Bien!!
+                  </div>
+				    </div>
+  				</div>
+  				<!-- Aseo General -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Aseo General</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="validationCustom04">
+	              			<option>Seleccione...</option>
+                      <option>1</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Estado de llantas -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Estado de llantas</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Exosto -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Exosto</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Fuga de fluidos de motor -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Fuga de fluidos de motor</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Fuga de fluidos Caja -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Fuga de fluidos Caja</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Fuga de fluidos transmisión -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Fuga de fluidos transmisión</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Tensión de Correas -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Tensión de Correas</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Tapas -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Tapas</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Equipo de Carretera -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Equipo de Carretera</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Botiquín -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Botiquín</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Nivel aceite motor -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Nivel aceite motor</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Nivel agua baterías -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Nivel agua baterías</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Nivel líquido de frenos -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Nivel líquido de frenos</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Nivel líquido hidráulico -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Nivel líquido hidráulico</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Nivel líquido baterías -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Nivel líquido baterías</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Sistema del aire -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Sistema del aire</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Tablero de instrumento -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Tablero de instrumento</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Cinturones de Seguridad -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Cinturones de Seguridad</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Espejos -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Espejos</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Funcionamiento de pito -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Funcionamiento de pito</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Funcionamiento de frenos -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Funcionamiento de frenos</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Palanca de cambios -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Palanca de cambios</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Sillas-Ventanas-Vidrios -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Sillas-Ventanas-Vidrios</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+            	<!-- Salidas y ventanas de emergencia -->
+           		<div class="form-group row">
+              		<label for="colFormLabel" class="col-6 col-form-label text-center">Salidas y ventanas de emergencia</label>
+              		<div class="col-sm-6">
+	            		<select class="form-control" id="colFormLabel">
+	              			<option>Seleccione...</option>
+	           			</select>
+	           		</div>
+            	</div>
+
+            	<!-- - - - - - - - - - Kit de Carretera - - - - - - - - - -->
+
+          	<div class="row">
+   			 	<div class="col">
+     				<h3 class="text-center">Kit de Carretera</h3>
+    			</div>
+   			</div>
+   			<div class="row">
+   				<div class="col">
+   					            	<!-- Conos -->
+	           		<div class="form-group row">
+	              		<label for="colFormLabel" class="col-6 col-form-label text-center">Conos</label>
+	              		<div class="col-sm-6">
+		            		<select class="form-control" id="colFormLabel">
+		              			<option>Seleccione...</option>
+		           			</select>
+		           		</div>
+	            	</div>
+	            	<!-- Linterna -->
+	           		<div class="form-group row">
+	              		<label for="colFormLabel" class="col-6 col-form-label text-center">Linterna</label>
+	              		<div class="col-sm-6">
+		            		<select class="form-control" id="colFormLabel">
+		              			<option>Seleccione...</option>
+		           			</select>
+		           		</div>
+	            	</div>
+	            	<!-- Cruceta -->
+	           		<div class="form-group row">
+	              		<label for="colFormLabel" class="col-6 col-form-label text-center">Cruceta</label>
+	              		<div class="col-sm-6">
+		            		<select class="form-control" id="colFormLabel">
+		              			<option>Seleccione...</option>
+		           			</select>
+		           		</div>
+	            	</div>
+	            	<!-- Copas -->
+	           		<div class="form-group row">
+	              		<label for="colFormLabel" class="col-6 col-form-label text-center">Copas</label>
+	              		<div class="col-sm-6">
+		            		<select class="form-control" id="colFormLabel">
+		              			<option>Seleccione...</option>
+		           			</select>
+		           		</div>
+	            	</div>
+   				</div>
+   				<div class="col">
+   					            	<!-- Venc. Extintor -->
+	           		<div class="form-group row">
+	              		<label for="colFormLabel" class="col-6 col-form-label text-center">Venc. Extintor</label>
+	              		<div class="col-sm-6">
+		            		<select class="form-control" id="colFormLabel">
+		              			<option>Seleccione...</option>
+		           			</select>
+		           		</div>
+	            	</div>
+	            	<!-- Mecheros -->
+	           		<div class="form-group row">
+	              		<label for="colFormLabel" class="col-6 col-form-label text-center">Mecheros</label>
+	              		<div class="col-sm-6">
+		            		<select class="form-control" id="colFormLabel">
+		              			<option>Seleccione...</option>
+		           			</select>
+		           		</div>
+	            	</div>
+	            	<!-- Gato -->
+	           		<div class="form-group row">
+	              		<label for="colFormLabel" class="col-6 col-form-label text-center">Gato</label>
+	              		<div class="col-sm-6">
+		            		<select class="form-control" id="colFormLabel">
+		              			<option>Seleccione...</option>
+		           			</select>
+		           		</div>
+	            	</div>
+	            	<!-- Estado vidrio panorámico -->
+	           		<div class="form-group row">
+	              		<label for="colFormLabel" class="col-6 col-form-label text-center">Estado vidrio panorámico</label>
+	              		<div class="col-sm-6">
+		            		<select class="form-control" id="colFormLabel">
+		              			<option>Seleccione...</option>
+		           			</select>
+		           		</div>
+	            	</div>
+   				</div>
+   			</div>
+   			<!-- Observaciones -->
+   			<div class="form-group row">
+              	<label for="exampleFormControlTextarea1" class="col-6 col-form-label text-center">Observaciones</label>
+              	<div class="col-sm-6">
+              		<textarea class="form-control" rows="4" id="validationCustom04" placeholder="" required>
+              </textarea>
+              <div class="invalid-feedback">
+                Por favor digite una hora valida.
+              </div>
+              	</div>
+            </div>
+            <!-- Responsable de la Revisión -->
+   			 	<div class="form-group row">
+    				<label for="colFormLabel" class="col-6 col-form-label text-center">Responsable de la Revisión</label>
+				    <div class="col-sm-6">
+				      <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
+              <div class="invalid-feedback">
+                Por favor No dejar en blanco.
+              </div>
+              <div class="valid-feedback">
+                    Se ve Bien!!
+                  </div>
+				    </div>
+  				</div>
+    
+   			<div class="form-group row">
+    			<label for="exampleFormControlFile1" class="col-4 col-form-label text-center">Imagen Frontal</label>
+    			<div class="col-sm-2">
+   					<input type="file" class="form-control-file" id="exampleFormControlFile1">
+   				</div>	
+ 			</div>
+ 			<div class="form-group row">
+    			<label for="exampleFormControlFile1" class="col-4 col-form-label text-center">Imagen Lateral 1</label>
+    			<div class="col-sm-2">
+   					<input type="file" class="form-control-file" id="exampleFormControlFile1">
+   				</div>	
+ 			</div>
+ 			<div class="form-group row">
+    			<label for="exampleFormControlFile1" class="col-4 col-form-label text-center">Imagen Lateral 2</label>
+    			<div class="col-sm-2">
+   					<input type="file" class="form-control-file" id="exampleFormControlFile1">
+   				</div>	
+ 			</div>
+ 			<div class="form-group row">
+    			<label for="exampleFormControlFile1" class="col-4 col-form-label text-center">Imagen Posterior</label>
+    			<div class="col-sm-2">
+   					<input type="file" class="form-control-file" id="exampleFormControlFile1">
+   				</div>	
+ 			</div>
+
+ 			   <button class="btn btn-success btn-lg btn-block" type="submit">Enviar</button>
+          <button class="btn btn-success btn-lg btn-block" type="reset">borrar</button>
+        </form><br>
+        
+        <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+
+          window.addEventListener('load', function() {
+            var form = document.getElementById('needs-validation');
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          }, false);
+        })();
+        </script>
+  	</div>
+
+
+
+ 	<!-- Optional JavaScript -->
+ 	<script src="js/jquery-1.12.3.js"></script>
+ 	<script src="js/jquery-1.12.3.min.js"></script>
+ 	<script src="js/jquery.vide.min.js"></script>
+ 	<script src="js/jquery.vide.js"></script>
+ 	<script src="js/bootstrap.min.js"></script>
+ 	<script src="js/bootstrap.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+ 
+  	
+  </body>
+</html>
